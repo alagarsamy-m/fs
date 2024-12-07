@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Service Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Home Service Booking</h1>
+        <p>Choose a service to book</p>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service" onclick="selectService('Cleaning')">
+            <h3>Cleaning Service</h3>
+            <p>Get your home cleaned professionally.</p>
+        </div>
+        <div class="service" onclick="selectService('Plumbing')">
+            <h3>Plumbing Service</h3>
+            <p>Experienced plumbers for all your needs.</p>
+        </div>
+        <div class="service" onclick="selectService('Electrical')">
+            <h3>Electrical Service</h3>
+            <p>Skilled electricians to fix your wiring issues.</p>
+        </div>
+        <div class="service" onclick="selectService('Carpentry')">
+            <h3>Carpentry Service</h3>
+            <p>Expert carpenters for your furniture needs.</p>
+        </div>
+    </section>
+
+    <section id="selected-service">
+        <h2>Selected Service</h2>
+        <p id="service-name">None</p>
+        <button onclick="bookService()">Book Service</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Home Service Booking</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

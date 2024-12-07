@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Micro-Blogging App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Micro-Blogging App</h1>
+        <div class="user-section">
+            <input type="text" id="username" placeholder="Enter your username" />
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="content-section" class="content-section" style="display: none;">
+            <div>
+                <h2>Post a message</h2>
+                <textarea id="post-content" placeholder="What's on your mind?" rows="4" cols="50"></textarea><br>
+                <button onclick="postContent()">Post</button>
+            </div>
+            <div>
+                <h2>Follow users</h2>
+                <input type="text" id="follow-user" placeholder="Enter username to follow" />
+                <button onclick="followUser()">Follow</button>
+            </div>
+
+            <h2>Feed</h2>
+            <div id="feed"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

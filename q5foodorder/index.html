@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Food Delivery Service</h1>
+  </header>
+  <main>
+    <section id="restaurant-list">
+      <h2>Choose a Restaurant</h2>
+      <ul>
+        <li><button onclick="showMenu('restaurant1')">Restaurant 1</button></li>
+        <li><button onclick="showMenu('restaurant2')">Restaurant 2</button></li>
+        <li><button onclick="showMenu('restaurant3')">Restaurant 3</button></li>
+      </ul>
+    </section>
+
+    <section id="menu" class="hidden">
+      <h2 id="restaurant-name"></h2>
+      <ul id="food-items">
+        <!-- Menu items will be loaded here -->
+      </ul>
+      <button onclick="goBack()">Back</button>
+    </section>
+
+    <section id="order-summary" class="hidden">
+      <h2>Order Summary</h2>
+      <ul id="order-list">
+        <!-- Ordered items will appear here -->
+      </ul>
+      <button onclick="checkout()">Checkout</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

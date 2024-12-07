@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | Programmer | Tech Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate developer with expertise in programming and web development. My goal is to build innovative solutions and contribute to cutting-edge projects.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, C, JavaScript</li>
+                <li>Web Development: HTML, CSS, React</li>
+                <li>Tools: Git, CorelDRAW</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Resume Builder:</strong> A web app to generate professional resumes using templates.</li>
+                <li><strong>Portfolio Generator:</strong> A platform to create personal portfolios with customizable templates.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
